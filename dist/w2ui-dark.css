@@ -161,7 +161,7 @@ select {
   padding: 4px 10px;
   margin-left: 10px;
   margin-top: 0px;
-  color: #000000 !important;
+  color: black !important;
   box-shadow: 1px 1px 5px #000000;
   line-height: normal;
   font-size: 11px;
@@ -259,7 +259,7 @@ select {
   opacity: 0.8;
   filter: alpha(opacity=80);
   background-color: #555555;
-  color: #ffffff;
+  color: white;
   text-align: center;
   border-radius: 5px;
   border: 2px solid #444444;
@@ -654,7 +654,7 @@ select {
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-saturday:hover,
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-sunday:hover {
   border: 1px solid #c0c8d5;
-  color: #ffffff;
+  color: white;
   background-color: #222222;
 }
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-today {
@@ -664,13 +664,13 @@ select {
 }
 .w2ui-calendar table.w2ui-calendar-days td:hover {
   border: 1px solid #c0c8d5;
-  color: #ffffff;
+  color: white;
   background-color: #222222;
 }
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-blocked-date {
   text-decoration: line-through;
   border: 1px solid #505c77;
-  color: #c0c0c0;
+  color: silver;
   background-color: #505c77;
 }
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-day-empty {
@@ -797,7 +797,7 @@ select {
 .w2ui-items .w2ui-empty-list {
   padding: 5px 2px;
   text-align: center;
-  color: #808080;
+  color: gray;
 }
 .w2ui-items ul li {
   display: block;
@@ -1747,7 +1747,7 @@ select {
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node .w2ui-node-image:hover,
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node .w2ui-node-image > span:hover,
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node td.w2ui-node-dots:hover {
-  color: #ffffff;
+  color: white;
 }
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node:hover {
   border-top: 1px solid #373f52;
@@ -1871,14 +1871,14 @@ select {
 }
 .w2ui-sidebar .w2ui-sidebar-div td.w2ui-node-data .w2ui-node-count {
   float: right;
-  border: 2px solid #ffffff;
+  border: 2px solid white;
   border-radius: 20px;
   width: auto;
   height: 18px;
   padding: 2px 7px;
   margin: 3px 4px -2px 0;
   background-color: #57a7e9;
-  color: #ffffff;
+  color: white;
   box-shadow: 0px 0px 5px #444444;
   text-shadow: 1px 1px 1px #000000;
   position: relative;
@@ -1912,7 +1912,7 @@ select {
   cursor: default;
 }
 .w2ui-tabs .w2ui-tab.active {
-  color: #ffffff;
+  color: white;
   background-color: #313947;
   border: 1px solid #999999;
   border-bottom: 1px solid transparent;

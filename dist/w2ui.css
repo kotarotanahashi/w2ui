@@ -63,8 +63,8 @@ textarea {
   padding: 4px;
   border: 1px solid #bbbbbb;
   border-radius: 3px;
-  color: #000000;
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
 }
 input[type=text]:focus,
 input[type=password]:focus,
@@ -144,7 +144,7 @@ select {
   padding: 4px 10px;
   margin-left: 10px;
   margin-top: 0px;
-  color: #ffffff !important;
+  color: white !important;
   box-shadow: 1px 1px 3px #000000;
   line-height: normal;
   font-size: 11px;
@@ -242,7 +242,7 @@ select {
   opacity: 0.8;
   filter: alpha(opacity=80);
   background-color: #555555;
-  color: #ffffff;
+  color: white;
   text-align: center;
   border-radius: 5px;
   border: 2px solid #444444;
@@ -259,7 +259,7 @@ select {
 */
 .w2ui-form {
   position: relative;
-  color: #000000;
+  color: black;
   background-color: #f5f6f7;
   border: 1px solid #c0c0c0;
   border-radius: 3px;
@@ -460,7 +460,7 @@ select {
   position: absolute;
   margin-top: 5px;
   margin-left: -9px;
-  color: #ff0000;
+  color: red;
 }
 .w2ui-error {
   border: 1px solid #ffa8a8 !important;
@@ -589,7 +589,7 @@ select {
   background-image: linear-gradient(#e6e6e6, #c2c4c4);
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffe6e6e6', endColorstr='#ffc2c4c4', GradientType=0);
   border-bottom: 1px solid #999999;
-  color: #000000;
+  color: black;
   text-align: center;
   font-weight: bold;
 }
@@ -606,7 +606,7 @@ select {
 }
 .w2ui-calendar .w2ui-calendar-previous:hover,
 .w2ui-calendar .w2ui-calendar-next:hover {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   background-color: #efefef;
 }
 .w2ui-calendar .w2ui-calendar-previous {
@@ -622,7 +622,7 @@ select {
 }
 .w2ui-calendar table.w2ui-calendar-days td {
   border: 1px solid #e8e8e8;
-  color: #000000;
+  color: black;
   background-color: #f4f4fe;
   padding: 5px;
   cursor: default;
@@ -637,23 +637,23 @@ select {
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-saturday:hover,
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-sunday:hover {
   border: 1px solid #aaaaaa;
-  color: #000000;
-  background-color: #ffff00;
+  color: black;
+  background-color: yellow;
 }
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-today {
   border: 1px solid #8cb067;
-  color: #000000;
+  color: black;
   background-color: #e2f7cd;
 }
 .w2ui-calendar table.w2ui-calendar-days td:hover {
   border: 1px solid #aaaaaa;
-  color: #000000;
-  background-color: #ffff00;
+  color: black;
+  background-color: yellow;
 }
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-blocked-date {
   text-decoration: line-through;
   border: 1px solid #e8e8e8;
-  color: #808080;
+  color: gray;
   background-color: #e8e8e8;
 }
 .w2ui-calendar table.w2ui-calendar-days td.w2ui-day-empty {
@@ -662,7 +662,7 @@ select {
 }
 .w2ui-calendar table.w2ui-calendar-days tr.w2ui-day-title td {
   border: 1px solid #e8e8e8;
-  color: #808080;
+  color: gray;
   background-color: #e8e8e8;
   text-align: center;
   padding: 5px;
@@ -674,7 +674,7 @@ select {
   margin: 0px;
   min-height: 25px;
   overflow: auto;
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   border-radius: 3px;
   font-size: 6px;
   line-height: 100%;
@@ -683,7 +683,7 @@ select {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: white;
 }
 .w2ui-list input[type=text] {
   -webkit-box-shadow: none;
@@ -755,7 +755,7 @@ select {
   margin-top: 6px;
   display: none;
   z-index: 1600;
-  background-color: #ffffff;
+  background-color: white;
   border: 3px solid #777777;
   box-shadow: 0px 3px 8px #999999;
   border-radius: 4px;
@@ -780,7 +780,7 @@ select {
 .w2ui-items .w2ui-empty-list {
   padding: 5px 2px;
   text-align: center;
-  color: #808080;
+  color: gray;
 }
 .w2ui-items ul li {
   display: block;
@@ -812,8 +812,8 @@ select {
 }
 .w2ui-upload {
   position: absolute;
-  background-color: #ffffff;
-  border: 1px solid #c0c0c0 !important;
+  background-color: white;
+  border: 1px solid silver !important;
   border-radius: 3px;
   text-align: center;
   overflow: auto;
@@ -971,7 +971,7 @@ select {
 */
 .w2ui-grid {
   position: relative;
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   border-radius: 2px;
   overflow: hidden !important;
 }
@@ -999,7 +999,7 @@ select {
 }
 .w2ui-grid .w2ui-grid-toolbar {
   position: absolute;
-  border-bottom: 1px solid #c0c0c0;
+  border-bottom: 1px solid silver;
   background-color: #dee0e4;
   height: 38px;
   padding: 7px 3px 4px 3px;
@@ -1017,7 +1017,7 @@ select {
   height: 22px;
   border: 1px solid #999999;
   color: #000000;
-  background-color: #ffffff;
+  background-color: white;
   padding: 3px 18px 3px 23px;
   margin: 0px;
 }
@@ -1051,7 +1051,7 @@ select {
   position: absolute;
   overflow: hidden;
   padding: 0px;
-  background-color: #ffffff;
+  background-color: white;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1100,14 +1100,14 @@ select {
 }
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-odd {
   color: inherit;
-  background-color: #ffffff;
+  background-color: white;
 }
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-odd:hover {
   color: inherit;
   background-color: #e6f0ff;
 }
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-odd.w2ui-empty-record:hover {
-  background-color: #ffffff;
+  background-color: white;
 }
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-even {
   color: inherit;
@@ -1122,7 +1122,7 @@ select {
 }
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-selected,
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr td.w2ui-selected {
-  color: #000000 !important;
+  color: black !important;
   background-color: #b6d5ff !important;
 }
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records .w2ui-expanded {
@@ -1157,7 +1157,7 @@ select {
   color: #777777;
   background-color: rgba(233, 237, 243, 0.5);
   padding: 10px 0px 15px 0px;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid white;
 }
 .w2ui-grid .w2ui-grid-body .w2ui-grid-records .w2ui-load-more > div:hover {
   color: inherit;
@@ -1174,7 +1174,7 @@ select {
   padding: 0px;
   border-right: 1px solid #c5c5c5;
   border-bottom: 1px solid #c5c5c5;
-  color: #000000;
+  color: black;
   background-image: -webkit-linear-gradient(#f9f9f9, #e4e4e4);
   background-image: -moz-linear-gradient(#f9f9f9, #e4e4e4);
   background-image: -ms-linear-gradient(#f9f9f9, #e4e4e4);
@@ -1341,7 +1341,7 @@ select {
   width: 30px;
   height: 18px;
   margin-top: -1px;
-  color: #000000;
+  color: black;
   background-color: transparent;
 }
 .w2ui-grid .w2ui-grid-footer .w2ui-footer-center .w2ui-footer-nav a.w2ui-footer-btn:hover {
@@ -1459,13 +1459,13 @@ select {
 .w2ui-overlay .w2ui-grid-searches table td.caption {
   text-align: right;
   padding-right: 5px;
-  border-right: 1px solid #c0c0c0;
+  border-right: 1px solid silver;
 }
 .w2ui-overlay .w2ui-grid-searches table td.operator {
   text-align: left;
   padding: 0px 10px;
   padding-right: 5px;
-  border-right: 1px solid #c0c0c0;
+  border-right: 1px solid silver;
 }
 .w2ui-overlay .w2ui-grid-searches table td.value {
   padding-right: 5px;
@@ -1710,7 +1710,7 @@ select {
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node .w2ui-node-image,
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node .w2ui-node-image > span,
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node td.w2ui-node-dots {
-  color: #000000;
+  color: black;
   text-shadow: 0px 0px 0px #ffffff;
   pointer-events: none;
 }
@@ -1757,7 +1757,7 @@ select {
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-selected:hover .w2ui-node-image > span,
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-selected td.w2ui-node-dots,
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-selected:hover td.w2ui-node-dots {
-  color: #ffffff !important;
+  color: white !important;
   text-shadow: 1px 1px 2px #666666 !important;
 }
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-disabled,
@@ -1781,7 +1781,7 @@ select {
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-disabled:hover td.w2ui-node-dots {
   opacity: 0.4;
   filter: alpha(opacity=40);
-  color: #000000 !important;
+  color: black !important;
   text-shadow: 0px 0px 0px #ffffff !important;
 }
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node-caption {
@@ -1834,7 +1834,7 @@ select {
 }
 .w2ui-sidebar .w2ui-sidebar-div td.w2ui-node-data .w2ui-node-image > span {
   font-size: 16px;
-  color: #000000;
+  color: black;
   text-shadow: 0px 0px 0px #ffffff;
 }
 .w2ui-sidebar .w2ui-sidebar-div td.w2ui-node-data .w2ui-node-image.w2ui-icon {
@@ -1872,9 +1872,9 @@ select {
 .w2ui-tabs .w2ui-tab {
   padding: 6px 20px;
   text-align: center;
-  color: #000000;
+  color: black;
   background-color: transparent;
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   border-bottom: 1px solid silver;
   white-space: nowrap;
   margin: 1px 1px -1px 0px;
@@ -1883,9 +1883,9 @@ select {
   cursor: default;
 }
 .w2ui-tabs .w2ui-tab.active {
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #c0c0c0;
+  color: black;
+  background-color: white;
+  border: 1px solid silver;
   border-bottom: 1px solid transparent;
 }
 .w2ui-tabs .w2ui-tab.closable {
@@ -1962,7 +1962,7 @@ select {
   color: #516173;
 }
 .w2ui-toolbar table.w2ui-button .w2ui-tb-caption {
-  color: #000000;
+  color: black;
   padding: 0px 4px 0px 2px;
 }
 .w2ui-toolbar table.w2ui-button .w2ui-tb-down {
@@ -1976,7 +1976,7 @@ select {
   background-color: #eeeeee;
 }
 .w2ui-toolbar table.w2ui-button.over .w2ui-tb-caption {
-  color: #000000;
+  color: black;
 }
 .w2ui-toolbar table.w2ui-button.down {
   border: 1px solid #aaaaaa;
@@ -1987,10 +1987,10 @@ select {
 }
 .w2ui-toolbar table.w2ui-button.checked {
   border: 1px solid #aaaaaa;
-  background-color: #ffffff;
+  background-color: white;
 }
 .w2ui-toolbar table.w2ui-button.checked .w2ui-tb-caption {
-  color: #000000;
+  color: black;
 }
 .w2ui-toolbar table.w2ui-button table {
   height: 17px;
@@ -2011,8 +2011,8 @@ select {
 }
 .w2ui-overlay table.w2ui-drop-menu {
   width: 100%;
-  color: #000000;
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
   padding: 5px 0px;
   cursor: default;
 }

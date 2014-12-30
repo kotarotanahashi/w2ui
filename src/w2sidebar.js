@@ -38,6 +38,7 @@
 		this.onRefresh		= null;
 		this.onResize 		= null;
 		this.onDestroy	 	= null;
+        this.sideButton	 	= null;
 	
 		$.extend(true, this, w2obj.sidebar, options);
 	}
@@ -60,6 +61,7 @@
 				console.log('ERROR: The parameter "name" has to be alpha-numeric (a-z, 0-9, dash and underscore). ');
 				return;			
 			}
+ 
 			// extend items
 			var nodes  = method.nodes;
 			var object = new w2sidebar(method); 
@@ -111,7 +113,7 @@
 			onCollapse		: null,
 			// internal
 			parent	 		: null,		// node object
-			sidebar			: null
+			sidebar			: null,
 		},
 		
 		add: function (parent, nodes) {
@@ -626,6 +628,7 @@
 				height 	: $(this.box).height() + 'px'
 			});
 			var obj = this;
+ 
 			if (typeof id == 'undefined') {
 				var node = this;
 				var nm 	 = '.w2ui-sidebar-div';
@@ -659,7 +662,10 @@
 				var img  = nd.img;
 				if (img == null) img = this.img;
 				var icon  = nd.icon;
+ 
 				if (icon == null) icon = this.icon;
+                var sideButton = false;
+                sideButton = this.sideButton;
 				// -- find out level
 				var tmp   = nd.parent;
 				var level = 0;
@@ -669,6 +675,7 @@
 					level++;
 				}	
 				if (typeof nd.caption != 'undefined') nd.text = nd.caption;
+ buttonHTML = obj.sideButton? '<td id="w2ui-node-button"><div><i class="fa fa-caret-square-o-down"></i></div></td>' : '';
 				if (nd.group) {
 					html = 
 						'<div class="w2ui-node-group"  id="node_'+ nd.id +'"'+
@@ -701,6 +708,7 @@
 							(nd.count !== '' ? '<div class="w2ui-node-count">'+ nd.count +'</div>' : '') +
 							'<div class="w2ui-node-caption">'+ nd.text +'</div>'+
 						'</td>'+
+                        buttonHTML +
 						'</tr></table>'+
 					'</div>'+
 					'<div class="w2ui-node-sub" id="node_'+ nd.id +'_sub" style="'+ nd.style +';'+ (!nd.hidden && nd.expanded ? '' : 'display: none;') +'"></div>';
@@ -725,6 +733,16 @@
 			//$(this.box).find('.w2ui-sidebar-div').css('overflow', 'auto');
 			// event after
 			this.trigger($.extend(eventData, { phase: 'after' }));
+            //for cloudlatex
+            $(this.box).find('.w2ui-node-data').css({
+                width 	: ( Math.max($(this.box).width() -49,0) ) + 'px'
+            });
+ nodeCaption = $(this.box).find('.w2ui-node-data div.w2ui-node-caption');
+ sbtrct = $(this.box).find('table').css('marginLeft');
+ console.log(sbtrct);
+            nodeCaption.css({
+                 width 	: ( Math.max($(this.box).width() -74,0) ) + 'px'
+            });
 			return (new Date()).getTime() - time;
 		},
 		
