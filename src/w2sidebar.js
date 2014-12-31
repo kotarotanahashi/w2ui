@@ -385,6 +385,7 @@
 		}, 
 
 		click: function (id, event) {
+			console.log(event)
 			var obj = this;
 			var nd  = this.get(id);
 			if (nd == null) return;
@@ -603,6 +604,7 @@
 			this.trigger($.extend(eventData, { phase: 'after' }));
 			// ---
 			this.refresh();
+			this.resize();
 		},
 		
 		refresh: function (id) {
@@ -675,15 +677,17 @@
 					level++;
 				}	
 				if (typeof nd.caption != 'undefined') nd.text = nd.caption;
- buttonHTML = obj.sideButton? '<td id="w2ui-node-button"><div><i class="fa fa-caret-square-o-down"></i></div></td>' : '';
-				if (nd.group) {
+ 				buttonHTML = obj.sideButton? '<td class="w2ui-node-button"><div><i class="fa fa-caret-square-o-down"></i></div></td>' : '';
+ 				buttonHTMLGroup = obj.sideButton? '<span><i class="node-project-icon fa fa-caret-square-o-down"></i></span>' : '';
+ 				spanHTML = obj.sideButton? buttonHTMLGroup :'<span>'+ (!nd.hidden && nd.expanded ? w2utils.lang('Hide') : w2utils.lang('Show')) + '</span>'; 
+				if (nd.group){
 					html = 
 						'<div class="w2ui-node-group"  id="node_'+ nd.id +'"'+
-						'		onclick="w2ui[\''+ obj.name +'\'].toggle(\''+ nd.id +'\'); '+
+						//'		onclick="w2ui[\''+ obj.name +'\'].toggle(\''+ nd.id +'\'); '+
 						'				 var sp=$(this).find(\'span:nth-child(1)\'); if (sp.html() == \''+ w2utils.lang('Hide') +'\') sp.html(\''+ w2utils.lang('Show') +'\'); else sp.html(\''+ w2utils.lang('Hide') +'\');"'+
 						'		onmouseout="$(this).find(\'span:nth-child(1)\').css(\'color\', \'transparent\')" '+
 						'		onmouseover="$(this).find(\'span:nth-child(1)\').css(\'color\', \'inherit\')">'+
-						'	<span>'+ (!nd.hidden && nd.expanded ? w2utils.lang('Hide') : w2utils.lang('Show')) +'</span>'+
+						spanHTML + 
 						'	<span>'+ nd.text +'</span>'+
 						'</div>'+
 						'<div class="w2ui-node-sub" id="node_'+ nd.id +'_sub" style="'+ nd.style +';'+ (!nd.hidden && nd.expanded ? '' : 'display: none;') +'"></div>';
@@ -733,16 +737,7 @@
 			//$(this.box).find('.w2ui-sidebar-div').css('overflow', 'auto');
 			// event after
 			this.trigger($.extend(eventData, { phase: 'after' }));
-            //for cloudlatex
-            $(this.box).find('.w2ui-node-data').css({
-                width 	: ( Math.max($(this.box).width() -49,0) ) + 'px'
-            });
- nodeCaption = $(this.box).find('.w2ui-node-data div.w2ui-node-caption');
- sbtrct = $(this.box).find('table').css('marginLeft');
- console.log(sbtrct);
-            nodeCaption.css({
-                 width 	: ( Math.max($(this.box).width() -74,0) ) + 'px'
-            });
+            
 			return (new Date()).getTime() - time;
 		},
 		

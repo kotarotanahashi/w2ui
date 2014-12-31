@@ -1733,7 +1733,8 @@ select {
   padding: 1px 0px;
 }
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node table {
-  pointer-events: none;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node .w2ui-node-caption,
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node .w2ui-node-image,
@@ -1832,7 +1833,7 @@ select {
 }
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node-group :nth-child(1) {
   /* show / hide link */
-  margin-right: 10px;
+  margin-right: 3px;
   float: right;
   color: transparent;
 }
@@ -1840,6 +1841,11 @@ select {
   /* title text */
   font-weight: normal;
   text-transform: uppercase;
+}
+.w2ui-sidebar .w2ui-sidebar-div .w2ui-node-group .node-project-icon {
+  float: none;
+  color: #d2d2d2;
+  font-size: 16px;
 }
 .w2ui-sidebar .w2ui-sidebar-div .w2ui-node-sub {
   overflow: hidden;

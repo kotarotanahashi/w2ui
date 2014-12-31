@@ -55,7 +55,9 @@
 			margin: 0px;
 			padding: 1px 0px;
 			table {
-				pointer-events: none; // all mouse events go to div
+				
+				table-layout: fixed;
+        word-wrap: break-word;
 			}
 			.w2ui-node-caption, 
 			.w2ui-node-image, 
@@ -74,6 +76,8 @@
 				border-bottom: 1px solid @sidebar-node-hover-border-color;
 				.linear-gradient-vertical(@sidebar-node-hover-background-color-start, @sidebar-node-hover-background-color-end);
 			}
+			
+			
 			
 			// font icon default
 			.w2ui-node-image {
@@ -135,7 +139,7 @@
 
 			:nth-child(1) { 
 				/* show / hide link */		
-				margin-right: 10px;
+				margin-right: 3px;
 				float: right; 
 				color: transparent;
 			}
@@ -145,6 +149,13 @@
 				font-weight: normal;
 				text-transform: uppercase;
 			}
+			
+			.node-project-icon{
+        float:none;
+        color:rgb(210, 210, 210);
+        font-size:16px;
+      }
+      
 		}
 
 		.w2ui-node-sub {
