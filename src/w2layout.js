@@ -410,7 +410,7 @@
 
 		render: function (box) {
 			var obj = this;
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			var time = (new Date()).getTime();
 			// event before
 			var eventData = obj.trigger({ phase: 'before', type: 'render', target: obj.name, box: box });	
@@ -607,7 +607,7 @@
 		
 		refresh: function (panel) {
 			var obj = this;
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (typeof panel == 'undefined') panel = null;
 			var time = (new Date()).getTime();
 			// event before
@@ -661,7 +661,7 @@
 		},
 		
 		resize: function () {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (!this.box) return false;
 			var time = (new Date()).getTime();
 			// event before

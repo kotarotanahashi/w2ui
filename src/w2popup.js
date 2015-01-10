@@ -540,7 +540,7 @@ var w2popup = {};
 						'-o-transition': '.1s', 
 						'opacity': '0.6'
 					});			
-					if (window.getSelection) window.getSelection().removeAllRanges();
+					//if (window.getSelection) window.getSelection().removeAllRanges();
 				}); 
 				$('#w2ui-lock').on('mouseup', function () {
 					setTimeout(function () {
@@ -552,7 +552,7 @@ var w2popup = {};
 							'opacity': options.opacity
 						});
 					}, 100);
-					if (window.getSelection) window.getSelection().removeAllRanges();
+					//if (window.getSelection) window.getSelection().removeAllRanges();
 				});
 			} else {
 				$('#w2ui-lock').on('mouseup', function () { w2popup.close(); });

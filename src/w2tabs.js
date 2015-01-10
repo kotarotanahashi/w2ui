@@ -213,7 +213,7 @@
 			
 		refresh: function (id) {
 			var time = (new Date()).getTime();
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (String(id) == 'undefined') {
 				// refresh all
 				for (var i in this.tabs) this.refresh(this.tabs[i].id);
@@ -261,7 +261,7 @@
 			var eventData = this.trigger({ phase: 'before', type: 'render', target: this.name, box: box });	
 			if (eventData.isCancelled === true) return false;
 			// default action
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (String(box) != 'undefined' && box != null) { 
 				if ($(this.box).find('> table #tabs_'+ this.name + '_right').length > 0) {
 					$(this.box)
@@ -288,7 +288,7 @@
 		},
 		
 		resize: function () {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// event before
 			var eventData = this.trigger({ phase: 'before', type: 'resize', target: this.name });	
 			if (eventData.isCancelled === true) return false;

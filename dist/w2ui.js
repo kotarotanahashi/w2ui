@@ -3546,7 +3546,7 @@ w2utils.keyboard = (function (obj) {
 		},
 
 		dblClick: function (recid, event) {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// find columns
 			var column = null;
 			if (typeof recid == 'object') {
@@ -5772,7 +5772,7 @@ w2utils.keyboard = (function (obj) {
 
 		render: function (box) {
 			var obj = this;
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			var time = (new Date()).getTime();
 			// event before
 			var eventData = obj.trigger({ phase: 'before', type: 'render', target: obj.name, box: box });	
@@ -5969,7 +5969,7 @@ w2utils.keyboard = (function (obj) {
 		
 		refresh: function (panel) {
 			var obj = this;
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (typeof panel == 'undefined') panel = null;
 			var time = (new Date()).getTime();
 			// event before
@@ -6023,7 +6023,7 @@ w2utils.keyboard = (function (obj) {
 		},
 		
 		resize: function () {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (!this.box) return false;
 			var time = (new Date()).getTime();
 			// event before
@@ -6888,7 +6888,7 @@ var w2popup = {};
 						'-o-transition': '.1s', 
 						'opacity': '0.6'
 					});			
-					if (window.getSelection) window.getSelection().removeAllRanges();
+					//if (window.getSelection) window.getSelection().removeAllRanges();
 				}); 
 				$('#w2ui-lock').on('mouseup', function () {
 					setTimeout(function () {
@@ -6900,7 +6900,7 @@ var w2popup = {};
 							'opacity': options.opacity
 						});
 					}, 100);
-					if (window.getSelection) window.getSelection().removeAllRanges();
+					//if (window.getSelection) window.getSelection().removeAllRanges();
 				});
 			} else {
 				$('#w2ui-lock').on('mouseup', function () { w2popup.close(); });
@@ -7274,7 +7274,7 @@ var w2confirm = function (msg, title, callBack) {
 			
 		refresh: function (id) {
 			var time = (new Date()).getTime();
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (String(id) == 'undefined') {
 				// refresh all
 				for (var i in this.tabs) this.refresh(this.tabs[i].id);
@@ -7322,7 +7322,7 @@ var w2confirm = function (msg, title, callBack) {
 			var eventData = this.trigger({ phase: 'before', type: 'render', target: this.name, box: box });	
 			if (eventData.isCancelled === true) return false;
 			// default action
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			if (String(box) != 'undefined' && box != null) { 
 				if ($(this.box).find('> table #tabs_'+ this.name + '_right').length > 0) {
 					$(this.box)
@@ -7349,7 +7349,7 @@ var w2confirm = function (msg, title, callBack) {
 		},
 		
 		resize: function () {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// event before
 			var eventData = this.trigger({ phase: 'before', type: 'resize', target: this.name });	
 			if (eventData.isCancelled === true) return false;
@@ -7756,7 +7756,7 @@ var w2confirm = function (msg, title, callBack) {
 		
 		refresh: function (id) {
 			var time = (new Date()).getTime();
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// event before
 			var eventData = this.trigger({ phase: 'before', type: 'refresh', target: (typeof id != 'undefined' ? id : this.name), item: this.get(id) });	
 			if (eventData.isCancelled === true) return false;
@@ -7802,7 +7802,7 @@ var w2confirm = function (msg, title, callBack) {
 		
 		resize: function () {
 			var time = (new Date()).getTime();
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// event before
 			var eventData = this.trigger({ phase: 'before', type: 'resize', target: this.name });	
 			if (eventData.isCancelled === true) return false;
@@ -7889,7 +7889,7 @@ var w2confirm = function (msg, title, callBack) {
 		},
 
 		menuClick: function (id, menu_index, event) {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			var obj = this;
 			var it  = this.get(id);
 			if (it && !it.disabled) {
@@ -7906,7 +7906,7 @@ var w2confirm = function (msg, title, callBack) {
 		},
 				
 		click: function (id, event) {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			var obj = this;
 			var it  = this.get(id);
 			if (it && !it.disabled) {
@@ -8496,7 +8496,7 @@ var w2confirm = function (msg, title, callBack) {
 		},
 
 		dblClick: function (id, event) {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			var nd = this.get(id);
 			// event before
 			var eventData = this.trigger({ phase: 'before', type: 'dblClick', target: id, originalEvent: event, object: nd });
@@ -8591,7 +8591,7 @@ var w2confirm = function (msg, title, callBack) {
 		
 		refresh: function (id) {
 			var time = (new Date()).getTime();
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// event before
 			var eventData = this.trigger({ phase: 'before', type: 'refresh', target: (typeof id != 'undefined' ? id : this.name) });	
 			if (eventData.isCancelled === true) return false;
@@ -8671,7 +8671,6 @@ var w2confirm = function (msg, title, callBack) {
 						'		onmouseover="$(this).find(\'span:nth-child(1)\').css(\'color\', \'inherit\')">'+
 						spanHTML + 
 						'	<span>'+ nd.text +'</span>'+
-						
 						'</div>'+
 						'<div class="w2ui-node-sub" id="node_'+ nd.id +'_sub" style="'+ nd.style +';'+ (!nd.hidden && nd.expanded ? '' : 'display: none;') +'"></div>';
 				} else {
@@ -8706,7 +8705,7 @@ var w2confirm = function (msg, title, callBack) {
 	
 		resize: function () {
 			var time = (new Date()).getTime();
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection 
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// event before
 			var eventData = this.trigger({ phase: 'before', type: 'resize', target: this.name });
 			if (eventData.isCancelled === true) return false;

@@ -2353,7 +2353,7 @@
 		},
 
 		dblClick: function (recid, event) {
-			if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
+			//if (window.getSelection) window.getSelection().removeAllRanges(); // clear selection
 			// find columns
 			var column = null;
 			if (typeof recid == 'object') {
